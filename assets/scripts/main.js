@@ -52,7 +52,7 @@ let villain = {
         return [damage, this.attacks[attack]];
     },
     die() {
-        fightStatusElement.innerText = `Oliver took his stale baguette and impaled the mighty figure of Hulk with it. He smiled with delight as the creatures blood soaked the baguette - "yum - that will help with my iron deficiency."`;
+        fightStatusElement.innerText = `Oliver took his stale baguette and impaled the tiny figure of Hulk with it. He smiled with delight as the creatures blood soaked the baguette - "yum - that will help with my iron deficiency."`;
     },
 };
 
