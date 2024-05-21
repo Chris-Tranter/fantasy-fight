@@ -3,56 +3,56 @@ let gameRunning = true;
 const fightStatusElement = document.getElementById("fightStatus");
 
 let hero = {
-    name: "Oliver Twist",
-    image: "https://www.wholeheartedmen.com/wp-content/uploads/2013/12/oliver_twist-more.jpg",
+    name: "Shadow Shaman",
+    image: ".jpg",
     health: 100,
     attacks: [
         {
-            name: "Eye Stab",
-            dialogue: "Here, hold this!",
+            name: "Entity sap",
+            dialogue: "tsaaaap",
         },
         {
-            name: "Whooping Cough",
-            dialogue: "Catch this!",
+            name: "Shadow shard",
+            dialogue: "shhaaaaaa",
         },
         {
-            name: "Stale Baguette",
-            dialogue: "Please sir, have some more... PAIN.",
+            name: "Ancient gloop",
+            dialogue: "gluuuuuuh",
         },
     ],
     attack() {
-        return Math.ceil(Math.random() * 10);
+        return Math.ceil(Math.random() * 30);
     },
     die() {
-        fightStatusElement.innerText = `Mighty Hulk picked up Oliver's frail frame and tore the poor little boy in half. "HULK WIIIIINNNNSSSS," he roared.`;
+        fightStatusElement.innerText = `"Shadow shaman got banished into the shadow realm!"`;
     },
 };
 
 let villain = {
-    name: "Hulk Jr",
-    image: "https://images.nightcafe.studio/jobs/rMPy5bCnfgsfWILH5LAE/rMPy5bCnfgsfWILH5LAE--1--pub4c.jpg?tr=w-1600,c-at_max",
+    name: "Mad goblin",
+    image: ".jpg",
     health: 100,
     attacks: [
         {
-            name: "Hulk Smash",
-            dialogue: "HULK SMAAAAAAASH!!!!",
+            name: "Double fists",
+            dialogue: "oof, arr",
         },
         {
-            name: "Kerb Stomp",
-            dialogue: "HULK STOOOOOOMP!!!!",
+            name: "Rolly-polly",
+            dialogue: "uuurgh",
         },
         {
-            name: "Gamma Burst",
-            dialogue: "HULK BUUUUUUURRRRRST!!!!",
+            name: "Thrown dagger",
+            dialogue: "feeeyuuu",
         },
     ],
     attack() {
-        let damage = Math.ceil(Math.random() * 10);
+        let damage = Math.ceil(Math.random() * 30);
         let attack = Math.floor(Math.random() * 3);
         return [damage, this.attacks[attack]];
     },
     die() {
-        fightStatusElement.innerText = `Oliver took his stale baguette and impaled the tiny figure of Hulk with it. He smiled with delight as the creatures blood soaked the baguette - "yum - that will help with my iron deficiency."`;
+        fightStatusElement.innerText = `"Mad goblin looked up to the sky, then collapsed"`;
     },
 };
 
