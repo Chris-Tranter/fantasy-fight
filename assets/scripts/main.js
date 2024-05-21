@@ -4,7 +4,7 @@ const fightStatusElement = document.getElementById("fightStatus");
 
 let hero = {
     name: "Shadow Shaman",
-    image: ".jpg",
+    image: "./assets/images/wizard.jpg",
     health: 100,
     attacks: [
         {
@@ -24,13 +24,13 @@ let hero = {
         return Math.ceil(Math.random() * 30);
     },
     die() {
-        fightStatusElement.innerText = `"Shadow shaman got banished into the shadow realm!"`;
+        fightStatusElement.innerText = `'Shadow shaman was defeated!'`;
     },
 };
 
 let villain = {
     name: "Mad goblin",
-    image: ".jpg",
+    image: "./assets/images/goblin.jpg",
     health: 100,
     attacks: [
         {
@@ -52,7 +52,7 @@ let villain = {
         return [damage, this.attacks[attack]];
     },
     die() {
-        fightStatusElement.innerText = `"Mad goblin looked up to the sky, then collapsed"`;
+        fightStatusElement.innerText = `'Mad goblin was defeated!'`;
     },
 };
 
@@ -91,7 +91,7 @@ for (let i = 0; i < buttonElements.length; i++) {
             playSound(this.getAttribute("data-attack-name"));
             playerTurn = false;
             checkGameOver();
-            setTimeout(villainTurn, 5000);
+            setTimeout(villainTurn, 2500);
         }
     });
 }

@@ -8,4 +8,18 @@
 body {
     text-align: center;
     font-family: "Menlo";
+    background-color: crimson;
+    color: floralwhite;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+}
+
+.btn {
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: floralwhite;
+  color: crimson;
 }
